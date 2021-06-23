@@ -23,12 +23,12 @@ function App() {
 
     return (
         <div className="App">
-            <div className="quote-block">
-                <div className="quote-text">
+            <div id="quote-block">
+                <div id="text">
                 <span className="material-icons-round invertX quote-icon-magnify">format_quote</span>
                     {QUOTES[quoteIndex][0]}&nbsp;<span className="material-icons-round">format_quote</span>
                 </div>
-                <div className="quote-author">{QUOTES[quoteIndex][1]}</div>
+                <div id="author">{QUOTES[quoteIndex][1]}</div>
             </div>
             <button id="enlighter" onClick={() => updateQuote()}>
                 Enlight me <span className="material-icons-round">self_improvement</span>

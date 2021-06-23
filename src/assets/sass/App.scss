@@ -21,7 +21,7 @@ $color4: #D09683;
     flex-direction: column;
 }
 
-.quote-block {
+#quote-block {
     display: flex;
     flex-direction: column;
     background-color: $color2;
@@ -40,7 +40,7 @@ $color4: #D09683;
     @include transform(scaleX(-1));
 }
 
-.quote-text {
+#text {
     font-size: 1.5em;
     line-height: 1.6em;
     color: white;
@@ -49,7 +49,7 @@ $color4: #D09683;
     font-family: 'Montserrat', sans-serif;
 }
 
-.quote-author {
+#author {
     font-size: 1.5em;
     font-weight: 600;
     color: $color4;
