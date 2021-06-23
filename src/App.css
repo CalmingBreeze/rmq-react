@@ -1,0 +1,84 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #73605B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quote-block {
+  display: flex;
+  flex-direction: column;
+  background-color: #2D4262;
+  border-radius: 5px;
+  width: 450px;
+  min-height: 180px;
+  padding: 30px 40px 20px;
+  margin-bottom: 25px;
+}
+
+.quote-icon-magnify {
+  font-size: 1.6em;
+}
+
+.invertX {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.quote-text {
+  font-size: 1.5em;
+  line-height: 1.6em;
+  color: white;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
+}
+
+.quote-author {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #D09683;
+  text-align: right;
+}
+
+@keyframes levitate {
+  from {
+    bottom: -4px;
+  }
+  to {
+    bottom: 0;
+  }
+}
+#enlighter {
+  background-color: #2D4262;
+  border: 1px solid #73605B;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: white;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+}
+#enlighter .material-icons-round {
+  position: relative;
+  bottom: -4px;
+}
+#enlighter:hover .material-icons-round {
+  animation-name: levitate;
+  animation-delay: 300ms;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+#enlighter:active {
+  border: 1px solid #2D4262;
+}
+
+/*# sourceMappingURL=App.css.map */
